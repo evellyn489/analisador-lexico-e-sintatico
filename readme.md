@@ -87,7 +87,7 @@ Visualize a imagem gerada intitulada "arvore_sintatica.png"
 - arvore_sintatica.dot
 - arvore_sintatica.png
 
-## Videos
+##  🎥 Videos
 ### Análise Léxica
 https://www.youtube.com/watch?v=H8mXYfDN57o
 
