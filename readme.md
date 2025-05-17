@@ -76,3 +76,20 @@ Visualize a imagem gerada intitulada "arvore_sintatica.png"
 - build.sh – Script de compilação
 
 - entrada.py – Exemplo de arquivo para teste
+
+### Arquivos gerados pelo Analisador Léxico
+- Analisador
+- lex.yy.c
+
+### Arquivos gerados pelo Analisador Sintático
+- parser.tab.c
+- parser.tab.h
+- arvore_sintatica.dot
+- arvore_sintatica.png
+
+## Videos
+### Análise Léxica
+https://www.youtube.com/watch?v=H8mXYfDN57o
+
+### Análise Sintática
+https://www.youtube.com/watch?v=qDKBI2abvHw
