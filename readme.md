@@ -45,7 +45,7 @@ Compile o código gerado:
 gcc -o lexer lex.yy.c -lfl
 ```
 
-Execute o analisador com o arquivo de entrada:
+Execute o lexer com o arquivo de entrada:
 ```bash
 ./lexer < entrada.py
 ```
