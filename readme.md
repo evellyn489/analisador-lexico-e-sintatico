@@ -5,7 +5,7 @@
 ```bash
 flex lexer.l
 gcc -o lexer lex.yy.c -lfl
-./analisador < entrada.py
+./lexer < entrada.py
 ```
 ### Analisador Sintático
 Certifique-se de garantir a permissão de execução com esse comando 
