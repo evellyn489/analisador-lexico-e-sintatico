@@ -4,7 +4,6 @@
 #include <stdarg.h>
 #include <string.h>
 
-/* Define a estrutura do nó antes do %union */
 typedef struct no {
     char *nome;
     int nfilhos;
@@ -21,7 +20,6 @@ int yylex();
 void yyerror(const char* s);
 extern FILE* yyin;
 
-/* Variável global para armazenar a raiz da árvore */
 no* raiz_ast = NULL;
 %}
 
@@ -32,7 +30,6 @@ no* raiz_ast = NULL;
     struct no* node;
 }
 
-/* Tokens */
 %token <num> NUMERO
 %token <id> IDENTIFICADOR
 %token <str> STRING_FORMATADA
@@ -41,14 +38,11 @@ no* raiz_ast = NULL;
 %token OP_ATRIB OP_IGUAL OP_MOD OP_ADICAO OP_SUBTRACAO OP_MENOR
 %token DELIM_ABRE_PARENT DELIM_FECHA_PARENT DELIM_DOIS_PONTOS
 
-/* Declarar tipos para não-terminais */
 %type <node> programa comando expressao expressao_or expressao_and expressao_comp expressao_aditiva expressao_mult expressao_unaria expressao_primaria
 
-/* Precedência para dangling else */
 %nonassoc MENOR_QUE_ELSE
 %nonassoc PALAVRA_CHAVE_ELSE
 
-/* Operadores */
 %right OP_ATRIB
 %left OP_IGUAL OP_MENOR
 %left OP_ADICAO OP_SUBTRACAO
@@ -166,7 +160,6 @@ void yyerror(const char* s) {
     fprintf(stderr, "Erro na linha %d: %s\n", linha, s);
 }
 
-// Função para gerar o arquivo DOT para Graphviz
 void gerar_dot(no* raiz) {
     FILE* fp = fopen("arvore_sintatica.dot", "w");
     if (fp == NULL) {

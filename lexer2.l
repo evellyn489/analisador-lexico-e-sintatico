@@ -5,15 +5,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* Linha atual para rastreamento de erros */
 int linha = 1;
 
-/* Função para impressão de tokens durante o debug */
 void debug_token(const char* token_type, const char* text) {
     printf("Linha %d: %-15s: %s\n", linha, token_type, text);
 }
 
-/* Descomente esta linha para habilitar a depuração dos tokens */
 /* #define DEBUG_LEXER */
 %}
 
