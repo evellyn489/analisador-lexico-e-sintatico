@@ -4,7 +4,7 @@
 
 ```bash
 flex lexer.l
-gcc lex.yy.c -o analisador -lfl
+gcc -o lexer lex.yy.c -lfl
 ./analisador < entrada.py
 ```
 ### Analisador Sintático
