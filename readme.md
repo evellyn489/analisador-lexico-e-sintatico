@@ -42,12 +42,12 @@ flex lexer.l
 Compile o código gerado:
 
 ``` bash
-gcc lex.yy.c -o analisador -lfl
+gcc -o lexer lex.yy.c -lfl
 ```
 
 Execute o analisador com o arquivo de entrada:
 ```bash
-./analisador < entrada.py
+./lexer < entrada.py
 ```
 
 Obs.: Substitua entrada.py pelo nome do arquivo que deseja analisar.
