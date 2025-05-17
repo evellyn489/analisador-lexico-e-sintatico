@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo "Compilando o analisador sintático..."
 
 rm -f parser.tab.c parser.tab.h lex.yy.c analisador arvore_sintatica.dot arvore_sintatica.png

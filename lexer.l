@@ -3,18 +3,18 @@
 #include <string.h>
 
 typedef enum {
-    T_IDENTIFIER,    // Identificadores (variáveis, funções)
-    T_NUMBER,        // Números (inteiros, decimais)
-    T_STRING,        // Strings (incluindo f-strings)
-    T_KEYWORD,       // Palavras-chave (if, else, while, etc.)
-    T_OPERATOR,      // Operadores (+, -, *, /, %) e comparações (==, <, >)
-    T_DELIMITER,     // Delimitadores (parênteses, chaves, etc.)
-    T_ASSIGNMENT,    // Operador de atribuição (=)
-    T_WHITESPACE,    // Espaços em branco e nova linha
-    T_ERROR          // Erro léxico
+    T_IDENTIFIER,    
+    T_NUMBER,        
+    T_STRING,        
+    T_KEYWORD,   
+    T_OPERATOR,      
+    T_DELIMITER,   
+    T_ASSIGNMENT,    
+    T_WHITESPACE,    
+    T_ERROR
 } TokenType;
 
-int current_line = 1;
+int current_line = 1; 
 int last_printed_line = 0;
 
 void print_token(TokenType type, char* text);
