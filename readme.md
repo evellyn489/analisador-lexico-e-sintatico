@@ -80,7 +80,7 @@ Visualize a imagem gerada intitulada "arvore_sintatica.png"
 ### Arquivos gerados pelo Analisador Léxico
 - lex.yy.c
 - lexer
-- saida.lex
+- saida.lex (Código Tokenizado)
 
 ### Arquivos gerados pelo Analisador Sintático
 - parser.tab.c
