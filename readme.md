@@ -78,8 +78,9 @@ Visualize a imagem gerada intitulada "arvore_sintatica.png"
 - entrada.py – Exemplo de arquivo para teste
 
 ### Arquivos gerados pelo Analisador Léxico
-- Analisador
 - lex.yy.c
+- lexer
+- saida.lex
 
 ### Arquivos gerados pelo Analisador Sintático
 - parser.tab.c
